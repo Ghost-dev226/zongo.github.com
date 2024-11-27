@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitibmanegda CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #8e2de2, #4a00e0);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        .left-column, .right-column {
+            padding: 40px;
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .left-column {
+            background-color: #f8f9fa;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+
+        .right-column {
+            background-color: #ffffff;
+            clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        h1, h2 {
+            color: #4a00e0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h1::after, h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #4a00e0;
+        }
+
+        .profile-img {
+            width: 260px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #4a00e0;
+            box-shadow: 0 0 20px rgba(74, 0, 224, 0.3);
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #4a00e0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #8e2de2;
+            transform: translateX(5px);
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .skills, .languages, .interests {
+            margin-bottom: 30px;
+        }
+
+        .skill-bar {
+            background-color: #e9ecef;
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            background-color: #4a00e0;
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+            position: relative;
+        }
+
+        .skill-level::after {
+            content: attr(data-level);
+            position: absolute;
+            right: 5px;
+            top: -20px;
+            font-size: 0.8em;
+            color: #4a00e0;
+        }
+
+        .pdf-section {
+            margin-top: 30px;
+        }
+
+        .pdf-upload {
+            display: none;
+        }
+
+        .pdf-upload-label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4a00e0;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+.pdf-upload-label:hover {
+            background-color: #8e2de2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(142, 45, 226, 0.4);
+        }
+
+        #pdfPreview {
+            margin-top: 20px;
+        }
+
+        .languages ul, .interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .languages li, .interests li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .languages i, .interests i {
+            margin-right: 10px;
+            color: #4a00e0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                clip-path: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1> Mitibmanegda Ismaïla ZONGO</h1>
+        <p><span style="font-family: Courier New;"> Date de naissance: Né le 18 janvier 2001</span></p>
+        
+      <h2><i class="fas fa-briefcase"></i> Juriste en Droit Privé des Affaires</h2><br/>
+      
+            <h2><i class="fas fa-user"></i> Profil Personnel</h2>
+        <p><span style="font-family: Roboto;"> Personne motivée et determinée, dotée d'une solide base éducative et éthique. Mon parcours académique, marqué par l'obtention de mon CEP, BEPC, BAC A et une licence en Droit Privé des Affaires reflète mon engagement envers l'apprentissage et ma capacité à atteindre mes objectifs. Je suis organisé, polyvalent et bien developper en résolution de problème et de communication. Mon désir d'apprendre et de m'améliorer constamment me pousse à relever de nouveaux défis avec enthousiasme. Je suis prêt à mettre en oeuvre mes connaissances et compétences pour contribuer de manière positive à tout environnement professionel .</span></p>
+        
+            <h2><i class="fas fa-history"></i> Cursus Scolaires</h2>
+      
+      <h3> Certificat d'Etudes Primaires (CEP)</h3>
+                <p><mark>2010 - 2011</mark></p>
+           <p><li><i class="fas fa-chevron-right"></i><span style="font-family: Roboto;"> J'ai obtenu mon Certificat d'Etudes Primaires(CEP) à l'école primaire privée Petit David, marquant ainsi une étape importante de début de mon parcours éducatif et de mon engagement envers mon éducation. </span></p></li>
+      <h3> Brévet d'Etudes du Premier Cycle (BEPC)</h3>
+                <p><mark>2015 - 2016</mark></p>
+          <p><li><i class="fas fa-chevron-right"></i><span style="font-family: Roboto;"> Par la suite, j'ai décroché mon Brevet d'Etudes du Premier Cycle(BEPC) dans le collégue privé Al-Elmi à Ouagadougou. Une réussite qui a marqué une étape significative a mon parcours et mes compétences académiques.</span></p></li>
+      <h3> Baccalauréat (BAC)</h3>
+                <p><mark>2018 - 2019</mark></p>  
+          <p><li><i class="fas fa-chevron-right"></i><span style="font-family: Roboto;"> De plus, j'ai obtenu mon Baccalauréat Série A à Ouagadougou dans le lycée Song-Taaba, concrétisant ainsi mes éfforts et ma détermination dans mes études et mettant fin a mon parcours au Lycée.</span></p></li>
+        <h3>Licence en Droit</h3>
+        <p><mark>2019- 2022</mark></p>
+        <p><li><i class="fas fa-chevron-right"></i><span style="font-family: Roboto;"> Enfin, j'ai décroché ma licence en Droit Privé des Affaires à l'Université de l'Unité Africaine ex IAM en 2022, une étape trés importante de ma vie car marquant mon entrée dans le monde des adultes.</span></p></li>
+            <h2><i class="fas fa-graduation-cap"></i> Expériences Professionnelles et Formations</h2>
+        </ul>
+    <p>
+        <ul>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Une immersion militaires accompagnée de deux attestions effectuée en 2019 et en 2020 comme matières universitaires à Bobo Diaulasso dans le camp militaire GIFA.</li></STRONG><br>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Une formation civique et patriotique en septembre 2023 avec une Certification délivrée.</strong></li><br>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Un Service National de Développement (SND) d'unedurée d'un an effectué d'octobre 2023 à septembre 2024 dans le sécrétariat de l'Agence Judiciaire de l'État (AJE) avec une attestion de service et une attestion de travail. </strong></li><br>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Une expérience autodidacte en Développement Web Fullstack entre autres sur du HTML, CSS et JavaScript et en informatique ( Word, Excel).</strong></li><br>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Une expérience dans le domaine de la vente sur une durée de six (06) mois avec l'entreprise Eau Mama pour sa pormotion de leur nouveau jus nauterl et une petite expérience en marketing à Sanlam Assurances.</strong></li><br>
+
+          <li><i class="fas fa-chevron-right"></i><strong> Une formation intensive d'un mois en anglais soldée par une attestion d'acquisition de compétences.</strong><br></li>
+        </ul>
+    </p>
+            <div class="pdf-section">
+                <h2><i class="fas fa-file-pdf"></i> Diplômes, Attestations et Certifications</h2>
+          <a>
+            <a href="Diplome.pdf" class="pdf-link" target="_blank">
+              <i class="fas fa-file-pdf"></i>Diplômes(PDF)
+            <a href="HBADGE.pdf" class="pdf-link" target="_blank">
+              <i class="fas fa-file-pdf"></i> Certifications et Attestations(PDF)
+                    </a>
+            </div>
+        </div>
+        <div class="right-column">
+            <img src="Ani.jpg" alt="Votre photo" class="profile-img">
+            <div class="contact-info">
+                <a href="https://wa.me/22665569437" target="_blank"><i class="fab fa-whatsapp"></i> +226 55 00 89 14</a>
+                <a href="mailto:anicetdianda06@gmail.com"><i class="fas fa-envelope"></i> zongoismaila915@gmail.com</a>
+                <a href="https://www.google.com/maps?q=12,37181°N, 1,55570°O" target="_blank"><i class="fas fa-map-marker-alt"></i> Ouagadougou, Burkina Faso Rue 10.03</a>
+            </div>
+            <div class="skills">
+                <h2><i class="fas fa-cogs"></i> Compétences</h2>
+                <div class="skill">
+                    <p>Créativité</p>
+                    <div class="skill-bar"><div class="skill-level" data-level="90%" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>Organisation</p>
+                    <div class="skill-bar"><div class="skill-level" data-level="80%" style="width: 90%;"></div></div>
+                </div>
+        <div class="skill">
+                    <p>Communication</p>
+                    <div class="skill-bar"><div class="skill-level" data-level="80%" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>Collaboration</p>
+                    <div class="skill-bar"><div class="skill-level" data-level="70%" style="width: 90%;"></div></div>
+                </div>
+            </div>
+            <div class="languages">
+                <h2><i class="fas fa-language"></i> Langues</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Français - Courant</li>
+                    <li><i class="fas fa-check-circle"></i> Anglais - Intermédiaire</li>
+                    <li><i class="fas fa-check-circle"></i> Allemand - Intermédiaire</li>
+                    <li><i class="fas fa-check-circle"></i> Mooré (Langue maternelle) - courant
+                </ul>
+            </div>
+            <div class="interests">
+                <h2><i class="fas fa-heart"></i> Centres d'intérêt</h2>
+                <ul>
+          <li><i class="fas fa-running"></i> Sport</li>
+                    <li><i class="fas fa-landmark"></i> Histoire</li>
+                    <li><i class="fas fa-plane"></i> Voyage</li>
+          <li><i class="fas fa-tshirt"></i> Mode</li>
+                    <li><i class="fas fa-music"></i> Musique</li>
+                    <li><i class="fas fa-mountain"></i> Aventure</li>
+          <li><i class="fas fa-book"></i> Lecture</li>
+                    <li><i class="fas fa-utensils"></i> Cuisine</li>
+                    <li><i class="fas fa-camera"></i> Jeux vidéos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(level => {
+                level.style.width = '0%';
+                setTimeout(() => {
+                    level.style.width = level.getAttribute('data-level');
+                }, 500);
+            });
+
+            const pdfUpload = document.getElementById('pdfUpload');
+            const pdfPreview = document.getElementById('pdfPreview');
+
+            pdfUpload.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file.type !== 'application/pdf') {
+                    alert('Veuillez sélectionner un fichier PDF.');
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const pdfObject = document.createElement('object');
+                    pdfObject.data = e.target.result;
+                    pdfObject.type = 'application/pdf';
+                    pdfObject.width = '100%';
+                    pdfObject.height = '500px';
+                    pdfPreview.innerHTML = '';
+                    pdfPreview.appendChild(pdfObject);
+                }
+                reader.readAsDataURL(file);
+            });
+        });
+    </script>
+</body>
+</html>
